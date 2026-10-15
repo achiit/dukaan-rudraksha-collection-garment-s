@@ -1,0 +1,494 @@
+# PROJECT: RUDRAKSHA COLLECTION — GARMENT E-COMMERCE WEBSITE & CRM
+
+## ACT AS
+
+Act as a senior full-stack developer, e-commerce architect, UI/UX designer, retail business consultant, database engineer, and CRM solution architect with 30+ years of equivalent industry expertise.
+
+Build a professional, responsive, production-ready garment retail platform for **Rudraksha Collection**, an Indian clothing store.
+
+The platform must include a public-facing shopping website, product catalogue, customer accounts, shopping cart, order management, inventory management, billing, sales reports, and a complete CRM admin dashboard.
+
+## 1. BRAND IDENTITY
+
+Brand Name: Rudraksha Collection
+
+Tagline: "Style for Every Moment."
+
+Business Type: Garment Retail Store and Online Fashion Shopping.
+
+Target Market: Customers in Maharashtra and across India.
+
+Design Style:
+- Premium, modern Indian fashion boutique.
+- Elegant cream, black, white, and muted gold color palette.
+- Professional typography, attractive product photography, clean layouts, and smooth navigation.
+- Mobile-first, responsive design for desktop, tablet, and smartphone.
+- INR currency formatting and Indian address formats.
+- English interface with a structure that can support Marathi and Hindi in the future.
+
+## 2. CUSTOMER-FACING WEBSITE
+
+Create the following pages:
+
+1. Home
+2. Shop All
+3. Men's Wear
+4. Women's Wear
+5. Kids' Wear
+6. Ethnic Wear
+7. Casual Wear
+8. Formal Wear
+9. Festive Collection
+10. New Arrivals
+11. Best Sellers
+12. Product Details
+13. Search Results
+14. Shopping Cart
+15. Checkout
+16. Customer Login and Registration
+17. My Account
+18. My Orders
+19. Wishlist
+20. Track Order
+21. About Us
+22. Contact Us
+23. Frequently Asked Questions
+24. Shipping and Delivery Policy
+25. Return and Exchange Policy
+26. Privacy Policy
+27. Terms and Conditions
+
+Build a premium homepage with:
+- Hero banner and Shop Now button.
+- Featured clothing categories.
+- New arrivals and best sellers.
+- Seasonal and festive offers.
+- Discount banners.
+- Recommended products.
+- Customer testimonials.
+- WhatsApp contact button.
+- Store address, business hours, phone number, and social media links.
+- Newsletter subscription.
+
+Do not invent the store's real contact information. Make all business details configurable from the admin panel.
+
+## 3. PRODUCT CATALOGUE
+
+Create a complete product management system.
+
+Each product must support:
+- Product ID and SKU.
+- Product name and description.
+- Category and subcategory.
+- Brand.
+- Product images and gallery.
+- Purchase cost and selling price.
+- Discount price and discount percentage.
+- Available sizes such as XS, S, M, L, XL, XXL.
+- Colors and product variants.
+- Fabric and material details.
+- Stock quantity for each size and color.
+- Barcode field.
+- Product tags.
+- Featured and best-seller status.
+- Product availability.
+- Product creation and update timestamps.
+
+Include category filters, size filters, color filters, price range filters, sorting, and keyword search.
+
+Track stock at the individual size-and-color variant level.
+
+## 4. COMPLETE CRM SYSTEM
+
+Build an integrated Customer Relationship Management module accessible through a secure admin dashboard.
+
+### Customer Management
+Maintain:
+- Customer ID.
+- Full name.
+- Mobile number.
+- Email address.
+- Billing and shipping addresses.
+- Customer registration date.
+- Date of birth, optional.
+- Preferred clothing categories and sizes.
+- Total orders.
+- Total purchase value.
+- Last purchase date.
+- Average order value.
+- Customer source.
+- Customer status.
+- Customer notes and communication history.
+
+Automatically create or update customer profiles when an online or in-store sale is recorded.
+
+Identify repeat customers and inactive customers based on configurable business rules.
+
+Provide customer search by name, mobile number, email, customer ID, or order ID.
+
+### Customer Segmentation
+Create segments for:
+- New Customers.
+- Regular Customers.
+- VIP Customers.
+- High-Spending Customers.
+- Inactive Customers.
+- Customers with Pending Orders.
+- Customers Eligible for Offers.
+- Customers with Previous Returns.
+
+Allow authorized staff to create custom segments.
+
+### CRM Follow-ups
+Provide:
+- Follow-up task creation.
+- Task assignment to employees.
+- Due dates and reminders.
+- Customer call notes.
+- Follow-up status.
+- Purchase follow-up.
+- Feedback collection.
+- Complaint management.
+- Customer service history.
+
+### Offers and Loyalty
+Support:
+- Discount coupons.
+- Festival offers.
+- Birthday offers.
+- Loyalty points.
+- Customer-specific promotions.
+- Referral tracking.
+- Coupon usage reports.
+
+Integrate WhatsApp, email, or SMS only through properly configured and authorized providers. Do not claim messages were sent unless the provider confirms success. Obtain appropriate consent for promotional communications.
+
+## 5. SALES AND ORDER MANAGEMENT
+
+Implement the complete order lifecycle:
+
+Product Selection → Add to Cart → Customer Details → Address → Shipping Selection → Payment → Order Confirmation → Stock Deduction → Packing → Dispatch → Delivery → Feedback.
+
+Order statuses:
+- Pending.
+- Confirmed.
+- Processing.
+- Packed.
+- Shipped.
+- Out for Delivery.
+- Delivered.
+- Cancelled.
+- Return Requested.
+- Returned.
+- Refunded.
+
+Each order must contain:
+- Unique order ID.
+- Customer information.
+- Product details.
+- Size and color.
+- Quantity.
+- Item price.
+- Discounts.
+- Applicable taxes.
+- Shipping fee.
+- Final payable amount.
+- Payment status.
+- Payment method.
+- Shipping address.
+- Shipment tracking information.
+- Order timeline.
+
+Generate downloadable invoices and printable order summaries.
+
+Prevent duplicate orders from repeated checkout submissions and validate stock before confirming orders.
+
+## 6. PAYMENT AND CHECKOUT
+
+Support a configurable payment integration architecture for:
+- UPI.
+- Debit and credit cards.
+- Net banking.
+- Approved payment gateways.
+- Cash on Delivery, if enabled.
+
+Use a trusted payment provider such as Razorpay or another supported gateway.
+
+Verify payment results securely on the server through provider callbacks or webhooks. Never store raw card details, UPI PINs, or payment credentials.
+
+Provide payment success, failure, pending, refund, and reconciliation statuses.
+
+Allow the administrator to enable or disable payment methods.
+
+## 7. INVENTORY MANAGEMENT
+
+Build inventory management with:
+- Stock by product, size, color, and location.
+- Opening stock.
+- Stock received.
+- Sales deductions.
+- Returns and restocking.
+- Damaged goods.
+- Stock adjustments.
+- Supplier information.
+- Purchase orders.
+- Goods receipt records.
+- Low-stock alerts.
+- Out-of-stock alerts.
+- Inventory valuation.
+- Stock movement history.
+
+Maintain a complete audit trail of stock changes.
+
+Prevent overselling through transactional stock validation and appropriate database constraints.
+
+## 8. IN-STORE POS BILLING
+
+Create a Point of Sale module for physical garment shop transactions.
+
+Features:
+- Fast product search by name, SKU, or barcode.
+- Barcode scanning support.
+- Add items to the billing cart.
+- Select size and color.
+- Apply authorized discounts.
+- Calculate applicable GST using configurable tax rules.
+- Support cash, UPI, card, and other configured payment methods.
+- Generate invoice numbers.
+- Print or download receipts.
+- Record returns and exchanges.
+- Update inventory immediately after a completed sale.
+- Link every sale to a customer when customer details are provided.
+- Support walk-in customers without forcing registration.
+
+Clearly distinguish quotations, pending payments, completed sales, and refunds.
+
+## 9. ADMIN DASHBOARD
+
+Build a secure, professional dashboard with the following KPIs:
+
+- Today's Sales.
+- Monthly Sales.
+- Total Revenue.
+- Total Orders.
+- Average Order Value.
+- Total Customers.
+- New Customers.
+- Repeat Customer Rate.
+- Total Products.
+- Available Stock.
+- Low Stock Products.
+- Out-of-Stock Products.
+- Pending Orders.
+- Cancelled Orders.
+- Returns and Refunds.
+- Estimated Gross Profit.
+- Best-Selling Products.
+- Best-Selling Categories.
+- Sales by Payment Method.
+
+Provide filters for date range, product category, sales channel, payment method, and store location.
+
+Use real database data for all dashboard metrics. Do not hardcode fake numbers into production dashboards.
+
+Include charts for daily sales, monthly sales, category performance, top products, customer acquisition, and inventory movement.
+
+## 10. REPORTS AND ANALYTICS
+
+Generate:
+- Daily sales report.
+- Weekly and monthly sales report.
+- Product-wise sales report.
+- Category-wise sales report.
+- Customer purchase history.
+- Repeat customer report.
+- Inventory report.
+- Low-stock report.
+- Returns and refunds report.
+- Tax summary.
+- Payment reconciliation report.
+- Employee sales report.
+- Supplier purchase report.
+- Profitability report.
+
+Support CSV and Excel exports where appropriate.
+
+Calculate gross profit using recorded cost of goods sold, and clearly distinguish gross profit from net profit. Include refunds, discounts, and relevant expenses according to documented reporting rules.
+
+## 11. EMPLOYEE AND ROLE MANAGEMENT
+
+Create role-based access control for:
+
+Super Admin:
+Full system configuration and access.
+
+Store Manager:
+Sales, customers, inventory, reports, and order operations.
+
+Sales Staff:
+POS billing, customer records, and permitted CRM tasks.
+
+Inventory Staff:
+Stock updates, goods receipts, and stock movement.
+
+CRM Executive:
+Customer profiles, follow-ups, feedback, and authorized campaigns.
+
+Accountant:
+Invoices, payment records, tax reports, and reconciliation.
+
+Define granular permissions for viewing, creating, editing, exporting, approving, and deleting records.
+
+Require authorization for sensitive actions such as refunds, major discounts, stock adjustments, and user permission changes.
+
+Record important actions in an audit log.
+
+## 12. DATABASE AND BACKEND
+
+Use a reliable relational database such as PostgreSQL or the database supported by the selected platform.
+
+Create normalized tables or equivalent collections for:
+- users
+- roles
+- permissions
+- customers
+- customer_addresses
+- customer_notes
+- customer_segments
+- products
+- product_categories
+- product_variants
+- inventory
+- stock_movements
+- suppliers
+- purchase_orders
+- purchase_order_items
+- carts
+- cart_items
+- orders
+- order_items
+- payments
+- refunds
+- shipments
+- invoices
+- coupons
+- loyalty_transactions
+- crm_tasks
+- customer_feedback
+- returns
+- expenses
+- audit_logs
+- store_settings
+
+Create appropriate relationships, unique identifiers, indexes, validation rules, and timestamps.
+
+Maintain transactional consistency between orders, payments, inventory, and refunds.
+
+Use server-side validation, secure APIs, protected admin routes, environment variables, and database access policies.
+
+Do not expose secret API keys in frontend code.
+
+## 13. SECURITY AND CUSTOMER PRIVACY
+
+Implement:
+- Secure authentication.
+- Password hashing or managed authentication.
+- Role-based access control.
+- Input validation and sanitization.
+- Rate limiting where appropriate.
+- Protection against unauthorized data access.
+- Secure payment verification.
+- Audit logs.
+- Backup and recovery procedures.
+- Appropriate consent and privacy controls.
+- Data retention and deletion procedures.
+
+Never expose customer phone numbers, addresses, order histories, or CRM information to unauthorized users.
+
+## 14. UI/UX REQUIREMENTS
+
+Use a consistent, premium retail design system.
+
+Include:
+- Responsive navigation.
+- Product cards with clear prices.
+- Image galleries.
+- Loading states.
+- Empty states.
+- Validation messages.
+- Success and error notifications.
+- Pagination.
+- Search and filtering.
+- Accessible form labels.
+- Clear checkout progress.
+- Confirmation dialogs for destructive actions.
+
+Optimize product images and page loading speed. Follow accessibility and SEO best practices.
+
+## 15. SEO AND MARKETING
+
+Implement:
+- Search-friendly product URLs.
+- Product titles and meta descriptions.
+- Structured product data where supported.
+- Sitemap and robots.txt.
+- Social sharing metadata.
+- Optimized image alt text.
+- Google Analytics or an equivalent analytics integration when configured.
+- Campaign tracking and coupon attribution.
+
+Keep customer consent and applicable privacy requirements in mind when configuring analytics and marketing integrations.
+
+## 16. IMPLEMENTATION AND TESTING
+
+Build a functional application, not just a static design or clickable prototype.
+
+Create:
+- Working frontend pages.
+- Functional backend APIs.
+- Database schema and migrations.
+- Authentication and authorization.
+- Real product and order CRUD operations.
+- Customer CRM workflows.
+- Inventory synchronization.
+- POS billing.
+- Payment integration.
+- Admin reports.
+- Error handling.
+- Automated and manual test coverage.
+
+Provide demo data only in a clearly separated development or demo environment.
+
+Test these end-to-end scenarios:
+1. Register a customer and create a customer profile.
+2. Add a product with size and color variants.
+3. Complete an online order.
+4. Verify the payment and inventory changes.
+5. Record a physical shop sale through POS.
+6. Search a customer's purchase history.
+7. Create a CRM follow-up.
+8. Apply an authorized discount.
+9. Process a return and refund.
+10. Verify dashboard metrics against database transactions.
+11. Verify permissions for every user role.
+12. Verify that unauthorized users cannot access private customer data.
+
+## 17. FINAL DELIVERABLE
+
+Deliver a complete Rudraksha Collection garment retail website with integrated CRM, inventory, POS, order management, payment integration, and business analytics.
+
+Prioritize the implementation in phases:
+
+Phase 1: Storefront, product catalogue, customer registration, cart, and checkout.
+
+Phase 2: Admin panel, CRM, orders, inventory, and POS.
+
+Phase 3: Payment gateway, loyalty, marketing integrations, and advanced analytics.
+
+Phase 4: Security review, testing, performance optimization, deployment, backups, and documentation.
+
+If a required third-party integration is not configured, implement a clearly labeled setup state rather than pretending it works.
+
+Before declaring the application production-ready, verify the core workflows, database persistence, security, payment handling, inventory accuracy, and deployment configuration.
+
+The final result should be a scalable, professional retail management platform that helps Rudraksha Collection sell clothing online and in-store, maintain customer relationships, manage inventory, and monitor business performance from one centralized system.
